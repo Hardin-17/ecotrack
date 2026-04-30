@@ -994,8 +994,8 @@
       <div class="input-group">
         <label class="input-label">Diet type</label>
         <select class="select-input" id="diet-type">
-          <option value="meat-heavy">Meat-heavy</option>
-          <option value="average" selected>Average (some meat)</option>
+          <option value="Non-veg">Non-vegetarian</option>
+          <option value="average" selected>Average</option>
           <option value="flexitarian">Flexitarian</option>
           <option value="vegetarian">Vegetarian</option>
           <option value="vegan">Vegan</option>
@@ -1821,7 +1821,7 @@ async function generateCalcInsight(total, transport, home, food, diet) {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': 'Bearer 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'
+        'Authorization': 'Bearer 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'
       },
       body: JSON.stringify({
         model: 'llama-3.3-70b-versatile',
@@ -1892,7 +1892,7 @@ async function callClaudeAPI(userMsg) {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': 'Bearer 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'
+        'Authorization': 'Bearer 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'
       },
       body: JSON.stringify({
         model: 'llama-3.3-70b-versatile',
